@@ -29,8 +29,7 @@ class InputWindow:
 
     def execute(self):
         state = self.entry.get()
-        if state == 'terminal':
-            os.system('usr/bin/alacritty')
+        os.system('usr/bin/' + state)
 
 #uncomment to test this individual file
 #test = InputWindow()
