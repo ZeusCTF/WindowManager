@@ -1,5 +1,6 @@
 import tkinter
 import tkinter.messagebox
+import os
 
 class InputWindow:
     def __init__(self):
@@ -28,9 +29,8 @@ class InputWindow:
 
     def execute(self):
         state = self.entry.get()
-        if state == 'test':
-            state = 'works'
-            tkinter.messagebox.showinfo('result',state)
+        if state == 'terminal':
+            os.system('usr/bin/alacritty')
 
 #uncomment to test this individual file
 #test = InputWindow()
