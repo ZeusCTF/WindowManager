@@ -5,7 +5,7 @@ Currently working on:
 
 
 1. Convert files to bin
-2. Allow prompt to start Apps
+2: Figure out a way to map user input to Apps that can be ran
 
 
 
