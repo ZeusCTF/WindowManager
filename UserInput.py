@@ -30,6 +30,7 @@ class InputWindow:
     def execute(self):
         state = self.entry.get()
         os.system('usr/bin/' + state)
+        self.main.destroy()
 
 #uncomment to test this individual file
 #test = InputWindow()
