@@ -1,6 +1,8 @@
 import tkinter
 import tkinter.messagebox
 import os
+import signal
+
 
 def order66():
     pid = str(os.getpid())
