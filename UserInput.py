@@ -2,6 +2,12 @@ import tkinter
 import tkinter.messagebox
 import os
 
+def order66():
+    pid = str(os.getpid())
+    os.kill(int(pid), signal.SIGKILL)
+    subprocess.run(['kill', pid])
+
+
 class InputWindow:
     def __init__(self):
         self.main = tkinter.Tk()
@@ -31,6 +37,7 @@ class InputWindow:
         state = self.entry.get()
         os.system('/usr/bin/' + state)
         self.main.destroy()
+        order66()
 
 #uncomment to test this individual file
 #test = InputWindow()
