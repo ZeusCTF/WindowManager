@@ -1,13 +1,7 @@
 import tkinter
 import tkinter.messagebox
 import os
-import signal
 
-
-def order66():
-    pid = str(os.getpid())
-    os.kill(int(pid), signal.SIGKILL)
-    subprocess.run(['kill', pid])
 
 
 class InputWindow:
@@ -39,7 +33,7 @@ class InputWindow:
         state = self.entry.get()
         self.main.destroy()
         os.system('/usr/bin/' + state)
-        order66()
+
 
 #uncomment to test this individual file
 #test = InputWindow()
