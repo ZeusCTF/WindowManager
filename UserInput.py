@@ -16,6 +16,8 @@ class InputWindow:
 
         self.prompt.pack(side='left')
         self.entry.pack(side='left') 
+        
+        self.entry.focus()
 
         self.enter = tkinter.Button(self.bottom, text='Run', command=self.execute)
         self.quit = tkinter.Button(self.bottom, text='Exit', command=self.main.destroy)
