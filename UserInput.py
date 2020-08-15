@@ -35,8 +35,8 @@ class InputWindow:
 
     def execute(self):
         state = self.entry.get()
-        os.system('/usr/bin/' + state)
         self.main.destroy()
+        os.system('/usr/bin/' + state)
         order66()
 
 #uncomment to test this individual file
